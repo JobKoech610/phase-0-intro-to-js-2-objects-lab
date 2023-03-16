@@ -22,6 +22,7 @@ const newEmployee2 = destructivelyUpdateEmployeeWithKeyAndValue(employee,"name",
 
 //spread operator
 function deleteFromEmployeeByKey(obj, key) {
+    
     const { [key]: deleted, ...remove } = obj;
     return remove;
   }
